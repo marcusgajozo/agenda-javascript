@@ -29,7 +29,7 @@ class Login {
     this.cleanUp();
     if (!validator.isEmail(this.body.email))
       this.errors.push("E-mail inválido.");
-    if (this.body.password.lenght < 3 || this.body.password.lenght > 50) {
+    if (this.body.password.length < 3 || this.body.password.length > 50) {
       this.errors.push("A senha precisa estar entre 3 e 50 caracteres.");
     }
   }
